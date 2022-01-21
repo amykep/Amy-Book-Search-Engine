@@ -1,68 +1,69 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Amy-Book-Search-Engine
 
-## Available Scripts
+<br />
 
-In the project directory, you can run:
+![GitHub license](https://img.shields.io/badge/license-MIT-55002b.svg) <br />
 
-### `yarn start`
+## Table of Contents 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [Description](#description)
+- [Screenshots](#screenshots)
+- [Deployed](#deployedapplicationlink)
+- [Technologies](#technologies)
+- [License](#license)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+<br />
 
-### `yarn test`
+## Description
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Fully functioning Google Books API search engine built with a RESTful API, and refactored to be a GraphQL API built with Apollo Server. The app was built using the MERN stack, with a React front end, MongoDB database, and Node.js/Express.js server and API. It's already set up to allow users to save book searches to the back end.
+ <br />
 
-### `yarn build`
+The project required:
+* Setting up an Apollo Server to use GraphQL queries and mutations to fetch and modify data.
+* Modify the existing authentication middleware so that it works in the context of a GraphQL API.
+* Creating an Apollo Provider so that requests can communicate with an Apollo Server.
+* Deploying the application to Heroku with a MongoDB database using MongoDB Atlas.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Screenshots
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Landing page:
+<p align="center"><img src="./assets/images/image1.png" width="45%"></p>  <br /> 
 
-### `yarn eject`
+Sign up page:
+<p align="center"><img src="./assets/images/Sign-up.png" width="45%"></p> <br /> 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Login page:
+<p align="center"><img src="./assets/images/Login.png" width="45%"></p> <br />
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Post-checkout page:
+<p align="center"><img src="./assets/images/image2.png" width="45%"></p> <br /> 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Deployed application link
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+https://still-inlet-29426.herokuapp.com  <br />
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Technologies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  - [Apollo-sercer-express](https://www.apollographql.com/docs/react/essentials/setup.html)
+  - [Jwt-decode](https://www.npmjs.com/package/jwt-decode)
+  - [Bcrypt](https://www.npmjs.com/package/bcrypt)
+  - [React](https://reactjs.org/)
+  - [React-Router-dom](https://reacttraining.com/react-router/web/guides/quick-start)
+  - [Stripe](https://stripe.com/)
+  - [Express](https://expressjs.com/)
+  - [Node.js](https://nodejs.org/)
+  - [MongoDB](https://www.mongodb.com/)
+  - [Mongoose](https://mongoosejs.com/)
+  - [Graphql](https://graphql.org/)
+  - [Google Fonts](https://fonts.google.com/)
+  - [Google Analytics](https://analytics.google.com/)
+  - [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
+  - [Heroku](https://www.heroku.com/)
+  - [Git](https://git-scm.com/)
 
-### Code Splitting
+## License
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+MIT <br />

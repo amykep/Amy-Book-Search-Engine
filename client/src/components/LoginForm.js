@@ -2,40 +2,47 @@
 import React, { useState } from 'react';
 import { Form, Button, Alert } from 'react-bootstrap';
 
-import { loginUser } from '../utils/API';
+import { useMutation } from '@apollo/client';
+import { LOGIN_USER } from "../utils/mutations";
+
 import Auth from '../utils/auth';
 
-const LoginForm = () => {
+const LoginForm = () =>
+{
   const [userFormData, setUserFormData] = useState({ email: '', password: '' });
   const [validated] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
+  const [loginUser] = useMutation(LOGIN_USER);
 
-  const handleInputChange = (event) => {
+  const [login, { error }] = useMutation(LOGIN_USER);
+
+  const handleInputChange = (event) =>
+  {
     const { name, value } = event.target;
     setUserFormData({ ...userFormData, [name]: value });
   };
-
-  const handleFormSubmit = async (event) => {
+  // the ... in this context is being used as the spread operator. This means that we are setting the variables field in our mutation to be an object with key/value pairs that match directly to what our formState object looks like.
+  const handleFormSubmit = async (event) =>
+  {
     event.preventDefault();
 
     // check if form has everything (as per react-bootstrap docs)
     const form = event.currentTarget;
-    if (form.checkValidity() === false) {
+    if (form.checkValidity() === false)
+    {
       event.preventDefault();
       event.stopPropagation();
     }
 
-    try {
-      const response = await loginUser(userFormData);
+    try
+    {
+      const { data } = await loginUser({
+        variables: { ...userFormData },
+      });
 
-      if (!response.ok) {
-        throw new Error('something went wrong!');
-      }
-
-      const { token, user } = await response.json();
-      console.log(user);
-      Auth.login(token);
-    } catch (err) {
+      Auth.login(data.login.token);
+    } catch (err)
+    {
       console.error(err);
       setShowAlert(true);
     }
@@ -85,6 +92,7 @@ const LoginForm = () => {
           Submit
         </Button>
       </Form>
+      {error && <div>Login failed</div>}
     </>
   );
 };

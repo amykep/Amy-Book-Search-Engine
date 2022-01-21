@@ -1,12 +1,30 @@
+## Amy-Book-Search-Engine
+
+<br />
+
+![GitHub license](https://img.shields.io/badge/license-MIT-55002b.svg) <br />
+
+## Table of Contents 
+
+- [Description](#description)
+- [Screenshots](#screenshots)
+- [Deployed](#deployedapplicationlink)
+- [Technologies](#technologies)
+- [License](#license)
+
+<br />
+
 ## Description
 
-This project refactored a fully functioning Google Books API search engine built with a RESTful API as a GraphQL API built with Apollo Server. The original app was built using the MERN stack with a React front end, MongoDB database, and Node.js/Express.js server and API. It was already set up to allow users to save book searches to the back end.
+Fully functioning Google Books API search engine built with a RESTful API, and refactored to be a GraphQL API built with Apollo Server. The app was built using the MERN stack, with a React front end, MongoDB database, and Node.js/Express.js server and API. It's already set up to allow users to save book searches to the back end.
  <br />
- This project required:
+
+The project required:
 * Setting up an Apollo Server to use GraphQL queries and mutations to fetch and modify data.
 * Modify the existing authentication middleware so that it works in the context of a GraphQL API.
-* Creating an Apollo Provider so requests can communicate with an Apollo Server.
+* Creating an Apollo Provider so that requests can communicate with an Apollo Server.
 * Deploying the application to Heroku with a MongoDB database using MongoDB Atlas.
+
 
 ## Screenshots
 
@@ -24,7 +42,7 @@ Post-checkout page:
 
 ## Deployed application link
 
-https://thawing-brook-47026.herokuapp.com/  <br />
+https://still-inlet-29426.herokuapp.com  <br />
 
 
 ## Technologies

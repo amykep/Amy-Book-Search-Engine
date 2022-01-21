@@ -24,7 +24,7 @@ Post-checkout page:
 
 ## Deployed application link
 
-https://thawing-brook-47026.herokuapp.com/  <br />
+ https://git.heroku.com/still-inlet-29426.git <br />
 
 
 ## Technologies

@@ -42,7 +42,7 @@ THEN I am logged out of the site and presented with a menu with the options Sear
 
 ## Screenshots
 
-<p align="center"><img src="./images/Google-Book-Search.gif"></p>  <br /> 
+<p align="center"><img src="./src/images/Google-Book-Search.gif"></p>  <br /> 
 
 
 ## Deployed application link

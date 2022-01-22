@@ -46,8 +46,7 @@ THEN I am logged out of the site and presented with a menu with the options Sear
 
 
 ## Deployed application link
-
- https://git.heroku.com/still-inlet-29426.git <br />
+https://immense-sierra-46849.herokuapp.com<br />
 
 
 ## Technologies
